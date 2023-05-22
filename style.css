@@ -1,0 +1,79 @@
+body {
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}
+
+.image img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+.boton{
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #F80082;
+  margin:40px 40px 20px 40px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+.image-carta{
+  width: 100%;
+}
+.location-listing {
+  position: relative;
+}
+
+.image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .image img {
+  filter: blur(2px);
+}
+footer{
+  background-color: #f80082;
+  padding: 20px;
+  margin: 0;
+  left: 0;
+  position: absolute;
+  width:100%;
+}
+.footer_img{
+  padding: 0px 20px;
+  width: 30px;
+}
+.icon{
+  width: 30px;
+  margin: 0px 20px;
+}
+.video-column{
+  margin-top:50px
+}
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .image img {
+    filter: blur(2px);
+  }
+}
