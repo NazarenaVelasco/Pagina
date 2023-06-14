@@ -47,7 +47,6 @@ h2 {
 .location-listing:hover .location-title {
   opacity: 1;
 }
-
 .location-listing:hover .image img {
   filter: blur(2px);
 }
@@ -74,14 +73,6 @@ footer {
   width: 100%;
 }
 
-@media (hover: none) {
-  .location-title {
-    opacity: 1;
-  }
-  .image img {
-    filter: blur(2px);
-  }
-}
 @media screen and (max-width: 430px) {
   .boton {
     font-size: 3rem;
